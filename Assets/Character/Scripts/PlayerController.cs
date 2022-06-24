@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,9 +31,9 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-        moveD.y -= gravity* Time.deltaTime;
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal")*Time.deltaTime*speed * 10);
+        moveD.y -= gravity * Time.deltaTime;
+
+        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * Time.deltaTime * speed * 10);
         Cac.Move(moveD * Time.deltaTime);
     }
 }
-
