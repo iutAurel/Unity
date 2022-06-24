@@ -32,6 +32,12 @@ public class PlayerController : MonoBehaviour
                 playerAnimator.SetBool("JumpYes", true);
                 moveD.y = jumspeed;
 
+                if(Input.GetAxis("Vertical") >= 0)
+                {
+                    moveD = new Vector3(0, 0, Input.GetAxis("Vertical"));
+                    moveD = transform.TransformDirection(moveD);
+                    moveD *= speed;
+                }
             }
             else
                 playerAnimator.SetBool("JumpYes", false);
