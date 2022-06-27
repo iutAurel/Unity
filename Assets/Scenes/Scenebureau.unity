@@ -1896,10 +1896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474892a00abb8594bb1a444164465348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
-  jumspeed: 5
-  gravity: 20
-  Cac: {fileID: 684034307}
 --- !u!4 &684034309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d19c10ee6f0fc5c43a013ca0a9615b4a,
@@ -3408,7 +3404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1360826049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3593,7 +3589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842319af5a7206a48a26d7a70d8c4f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1360826048}
 --- !u!1001 &1396081316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4484,7 +4480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842319af5a7206a48a26d7a70d8c4f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1360826048}
 --- !u!1 &1925978058
 GameObject:
   m_ObjectHideFlags: 0

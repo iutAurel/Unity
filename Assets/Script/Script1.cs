@@ -2,62 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script : MonoBehaviour
+public class Script1 : MonoBehaviour
 {
-    public float speed = 6f;
+    [SerializeField] private float speed;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jump;
 
-    public float jumspeed = 8f;
-    public float gravity = 20f;
-    private Vector3 moveD = Vector3.zero;
-    public CharacterController Cac;
-    private Animator playerAnimator;
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 mouvD;
+    private Vector3 velocity;
+
+    [SerializeField] private float gravity;
+    private bool col;
+    private Transform tp;
+
+
+    private CharacterController c;
+
+    private void Start()
     {
-        Cac = GetComponent<CharacterController>();
-        playerAnimator = GetComponent<Animator>();
+        c = GetComponent<CharacterController>();
+        col = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Cac.isGrounded)
+        Debug.Log(col);
+        if (col == true)
         {
-            moveD = new Vector3(0, 0, Input.GetAxis("Vertical"));
-            moveD = transform.TransformDirection(moveD);
-            moveD *= speed;
-
-            if (Input.GetButton("Jump"))
-            {
-                playerAnimator.SetBool("JumpYes", true);
-                moveD.y = jumspeed;
-
-            }
-            else
-                playerAnimator.SetBool("JumpYes", false);
-
-
-            if (Input.GetAxis("Vertical") > 0.1)
-            {
-                playerAnimator.SetBool("SlowRunYes", true);
-            }
-            else if (Input.GetAxis("Vertical") < 0.1)
-            {
-                playerAnimator.SetBool("SlowRunYes", false);
-            }
-        }
-
-        if (Input.GetButton("Jump"))
-        {
-            playerAnimator.SetBool("JumpYes", true);
+            c.transform.position = new Vector3(1.5f, 1.25f, 8);//tp.transform.position;
+            col = false;
         }
         else
         {
-            playerAnimator.SetBool("JumpYes", false);
+            Mouv();
+        }
+    }
+
+    private void Mouv()
+    {
+        mouvD = new Vector3(0, 0, Input.GetAxis("Vertical"));
+        mouvD = transform.TransformDirection(mouvD);
+        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * Time.deltaTime * speed * 10);
+        mouvD *= speed;
+        if (Input.GetButton("Jump") && c.isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jump - 2f *gravity);
         }
 
-        moveD.y -= gravity* Time.deltaTime;
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * Time.deltaTime * speed * 10);
-        Cac.Move(moveD * Time.deltaTime);
+        c.Move(mouvD * Time.deltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        c.Move(velocity * Time.deltaTime);
     }
+
+    void OnControllerColliderHit(ControllerColliderHit collision)
+    {
+        if (collision.gameObject.tag == "sol")
+            col = true;
+    }
+
 }
