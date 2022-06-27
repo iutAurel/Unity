@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 691669576}
   - component: {fileID: 691669575}
   - component: {fileID: 691669574}
+  - component: {fileID: 691669577}
   m_Layer: 5
   m_Name: BouttonRegle
   m_TagString: Untagged
@@ -815,7 +816,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 691669575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 691669577}
+        m_MethodName: ChangeSceneToRegle
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &691669575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +865,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691669572}
   m_CullTransparentMesh: 0
+--- !u!114 &691669577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691669572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f91be6643d5104a8ed02e351aa1703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &794847477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1600,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1929689807}
-        m_MethodName: Exit
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1647,6 +1671,7 @@ GameObject:
   - component: {fileID: 2126579572}
   - component: {fileID: 2126579571}
   - component: {fileID: 2126579570}
+  - component: {fileID: 2126579573}
   m_Layer: 5
   m_Name: BouttonControle
   m_TagString: Untagged
@@ -1716,7 +1741,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2126579571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126579573}
+        m_MethodName: ChangeSceneToControle
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2126579571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,3 +1790,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126579568}
   m_CullTransparentMesh: 0
+--- !u!114 &2126579573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126579568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f91be6643d5104a8ed02e351aa1703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

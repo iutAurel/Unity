@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneDesert.unity
     guid: f2248530702fb914f8ff15a2fdff591d
+  - enabled: 1
+    path: Assets/Scenes/SceneRegle.unity
+    guid: 5cb8a134e166f454abff0dd63c4dde24
+  - enabled: 1
+    path: Assets/Scenes/SceneBureau.unity
+    guid: 6e137559b1c12bd47a885cf5d20f9eee
+  - enabled: 1
+    path: Assets/Scenes/SceneControle.unity
+    guid: 11ebad634e8f2674aaac3aee267eb22b
   m_configObjects: {}

@@ -9,8 +9,25 @@ public class ChangeScene : MonoBehaviour
 	{
 		SceneManager.LoadScene("SceneDesert");
 	}
-	public void Exit()
+
+	public void ChangeSceneToMenu(string sceneName)
+	{
+		SceneManager.LoadScene("SceneMenu");
+	}
+
+	public void ChangeSceneToRegle(string sceneName)
+	{
+		SceneManager.LoadScene("SceneRegle");
+	}
+
+	public void ChangeSceneToControle(string sceneName)
+	{
+		SceneManager.LoadScene("SceneControle");
+	}
+
+	public void ExitGame()
 	{
 		Application.Quit();
+		Debug.Log("Game is exiting");
 	}
 }
