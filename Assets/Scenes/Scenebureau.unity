@@ -1896,6 +1896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474892a00abb8594bb1a444164465348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3.5
+  moveSpeed: 0
+  jump: 0.2
+  gravity: -9.81
 --- !u!4 &684034309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d19c10ee6f0fc5c43a013ca0a9615b4a,
@@ -3936,7 +3940,7 @@ GameObject:
   - component: {fileID: 1478805057}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
