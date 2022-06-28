@@ -8,6 +8,7 @@ public class ToFin : MonoBehaviour
 	public void OnTriggerEnter(Collider other)
 	{
 		SceneManager.LoadScene("SceneFin");
+		Cursor.lockState = CursorLockMode.None;
 	}
 }
 
