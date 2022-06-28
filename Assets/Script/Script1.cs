@@ -15,12 +15,14 @@ public class Script1 : MonoBehaviour
     private bool col;
     private Transform tp;
 
+    private Animator playerAnimator;
 
     private CharacterController c;
 
     private void Start()
     {
         c = GetComponent<CharacterController>();
+        playerAnimator = GetComponent<Animator>();
         col = false;
     }
 
@@ -46,7 +48,42 @@ public class Script1 : MonoBehaviour
         mouvD *= speed;
         if (Input.GetButton("Jump") && c.isGrounded)
         {
+            playerAnimator.SetBool("SlowRunYes", false);
+            playerAnimator.SetBool("JumpYes", true);
             velocity.y = Mathf.Sqrt(jump - 2f *gravity);
+        }
+
+        else if (c.isGrounded == false)
+        {
+            playerAnimator.SetBool("JumpYes", true);
+        }
+
+        else
+            playerAnimator.SetBool("JumpYes", false);
+
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            playerAnimator.SetBool("SlowRunYes", true);
+            playerAnimator.SetBool("RunBackYes", false);
+        }
+
+        else if (Input.GetAxis("Vertical") == 0)
+        {
+            playerAnimator.SetBool("SlowRunYes", false);
+            playerAnimator.SetBool("RunBackYes", false);
+        }
+
+        else
+        {
+            playerAnimator.SetBool("SlowRunYes", false);
+            playerAnimator.SetBool("RunBackYes", true);
+            if (Input.GetButton("Jump"))
+            {
+                playerAnimator.SetBool("JumpBackYes", true);
+            }
+            else
+                playerAnimator.SetBool("JumpBackYes", false);
+            playerAnimator.SetBool("RunBackYes", true);
         }
 
         c.Move(mouvD * Time.deltaTime);
