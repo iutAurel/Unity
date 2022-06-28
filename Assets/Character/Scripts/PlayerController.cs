@@ -89,10 +89,16 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimator.SetBool("SlowRunYes", false);
             playerAnimator.SetBool("RunBackYes", true);
-            if (Input.GetButton("Jump"))
+            if (Input.GetButton("Jump")&& controller.isGrounded)
             {
                 playerAnimator.SetBool("JumpBackYes", true);
             }
+
+            else if (controller.isGrounded == false)
+            {
+                playerAnimator.SetBool("JumpBackYes", true);
+            }
+
             else
                 playerAnimator.SetBool("JumpBackYes", false);
             playerAnimator.SetBool("RunBackYes", true);
