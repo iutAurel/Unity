@@ -76,6 +76,24 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetBool("RunBackYes", true);
         }
 
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            playerAnimator.SetBool("RightWalkYes", true);
+            playerAnimator.SetBool("LeftWalkYes", false);
+        }
+
+        else if (Input.GetAxis("Horizontal") == 0)
+        {
+            playerAnimator.SetBool("RightWalkYes", false);
+            playerAnimator.SetBool("LeftWalkYes", false);
+        }
+
+        else
+        {
+            playerAnimator.SetBool("RightWalkYes", false);
+            playerAnimator.SetBool("LeftWalkYes", true);
+        }
+
         controller.Move(mouvD * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
