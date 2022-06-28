@@ -43,6 +43,17 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetBool("JumpYes", true);
             velocity.y = Mathf.Sqrt(jump - 2f * gravity);
         }
+
+        else if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if (Input.GetButton("Jump"))
+            {
+                playerAnimator.SetBool("SlowRunYes", false);
+                playerAnimator.SetBool("JumpYes", true);
+                velocity.y = Mathf.Sqrt(jump - 2f * gravity);
+            }
+        }
+
         else if (controller.isGrounded == false)
         {
             playerAnimator.SetBool("JumpYes", true);
