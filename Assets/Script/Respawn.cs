@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Re2 : MonoBehaviour
+public class Respawn : MonoBehaviour
 {
 
 
@@ -12,7 +12,7 @@ public class Re2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Scenebureau");
+            SceneManager.LoadScene("SceneDesert");
         }
     }
 }

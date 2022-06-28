@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speed;
     [SerializeField] private float jump;
+    private bool col;
 
     private Vector3 mouvD;
     private Vector3 velocity;
@@ -23,12 +24,22 @@ public class PlayerController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         playerAnimator = GetComponent<Animator>();
+        col = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Mouv();
+        if(col == true)
+        {
+            controller.transform.position = new Vector3(82, 0, 70);
+            col = false;
+        }
+        else
+        {
+            Mouv();
+        }
+        
 
     }
 
@@ -108,5 +119,13 @@ public class PlayerController : MonoBehaviour
         controller.Move(mouvD * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit collision)
+    {
+        if(collision.gameObject.tag == "obstacle")
+        {
+            col = true;
+        }
     }
 }

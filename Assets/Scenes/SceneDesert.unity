@@ -1620,6 +1620,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73d2600b17c40b24cb6cc38b9b1dd10e, type: 3}
+--- !u!1 &207901316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 455087470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &207901317
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207901316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -2.488252, z: 0.0150101185}
 --- !u!1001 &234962894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2220,6 +2239,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4109b3168856786478684a665517c52b, type: 3}
+--- !u!1 &344204140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1761710043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &344204141
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344204140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -2.488252, z: 0}
 --- !u!1 &369922903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pendulum (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: de4e8ae22411dba4f971edf49f8738f2,
         type: 3}
@@ -4395,6 +4438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pendulum (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: de4e8ae22411dba4f971edf49f8738f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5483,6 +5531,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4303498, guid: be878d9ea17907f4a8068678a5ce7908, type: 3}
+--- !u!1 &1025686053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1951423701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1025686054
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025686053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -2.488252, z: 0}
 --- !u!1 &1030860639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,7 +6085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  jump: 1
+  jump: 100
   gravity: -9.81
 --- !u!143 &1093898346
 CharacterController:
@@ -8580,6 +8647,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9a36900615fdefc48aec9bb663ca87c3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02009fcc6168a84d8ba0808a16e31d2, type: 3}
+--- !u!1 &1673644241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 773929246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1673644242
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673644241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -2.488252, z: 0}
 --- !u!1 &1683296880
 GameObject:
   m_ObjectHideFlags: 0
@@ -9529,6 +9615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pendulum
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: de4e8ae22411dba4f971edf49f8738f2,
         type: 3}
@@ -10868,6 +10959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pendulum (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263193850122822931, guid: de4e8ae22411dba4f971edf49f8738f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5263193850122822932, guid: de4e8ae22411dba4f971edf49f8738f2,
         type: 3}

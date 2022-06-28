@@ -5,7 +5,6 @@ using UnityEngine;
 public class Script1 : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float moveSpeed;
     [SerializeField] private float jump;
 
     private Vector3 mouvD;
@@ -13,7 +12,6 @@ public class Script1 : MonoBehaviour
 
     [SerializeField] private float gravity;
     private bool col;
-    private Transform tp;
 
     private Animator playerAnimator;
 
