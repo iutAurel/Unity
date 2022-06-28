@@ -85,6 +85,24 @@ public class Script1 : MonoBehaviour
             playerAnimator.SetBool("RunBackYes", true);
         }
 
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            playerAnimator.SetBool("RightWalkYes", true);
+            playerAnimator.SetBool("LeftWalkYes", false);
+        }
+
+        else if (Input.GetAxis("Horizontal") == 0)
+        {
+            playerAnimator.SetBool("RightWalkYes", false);
+            playerAnimator.SetBool("LeftWalkYes", false);
+        }
+
+        else
+        {
+            playerAnimator.SetBool("RightWalkYes", false);
+            playerAnimator.SetBool("LeftWalkYes", true);
+        }
+
         c.Move(mouvD * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         c.Move(velocity * Time.deltaTime);

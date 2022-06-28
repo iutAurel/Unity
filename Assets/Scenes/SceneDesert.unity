@@ -1983,7 +1983,7 @@ Transform:
   m_LocalScale: {x: 20.94096, y: 0.32393745, z: 36.66814}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 125
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: -2.8200002, y: -101.44301, z: 9.919001}
 --- !u!1 &313188285 stripped
 GameObject:
@@ -6893,7 +6893,7 @@ Transform:
   m_LocalScale: {x: 6.5009594, y: 0.32393757, z: 10.985248}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 124
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: -70.782005, z: 0}
 --- !u!1001 &1350577742
 PrefabInstance:
