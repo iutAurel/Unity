@@ -25,9 +25,15 @@ public class ChangeScene : MonoBehaviour
 		SceneManager.LoadScene("SceneControle");
 	}
 
+	public void ChangeSceneToCredits(string sceneName)
+	{
+		SceneManager.LoadScene("SceneCredits");
+	}
+
+
 	public void ExitGame()
 	{
-		Application.Quit();
 		Debug.Log("Game is exiting");
+		Application.Quit();
 	}
 }

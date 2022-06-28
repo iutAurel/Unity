@@ -15,9 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneRegle.unity
     guid: 5cb8a134e166f454abff0dd63c4dde24
   - enabled: 1
-    path: Assets/Scenes/SceneBureau.unity
+    path: Assets/Scenes/Scenebureau.unity
     guid: 6e137559b1c12bd47a885cf5d20f9eee
   - enabled: 1
     path: Assets/Scenes/SceneControle.unity
     guid: 11ebad634e8f2674aaac3aee267eb22b
+  - enabled: 1
+    path: Assets/Scenes/SceneFin.unity
+    guid: 58795f4a52913cd41b700d8f3eea4286
+  - enabled: 1
+    path: Assets/Scenes/SceneCredits.unity
+    guid: 226449fbe08ba5746b8c0389d20a699f
   m_configObjects: {}
