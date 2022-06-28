@@ -12,6 +12,7 @@ public class CamController : MonoBehaviour
     {
         parent = transform.parent;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame

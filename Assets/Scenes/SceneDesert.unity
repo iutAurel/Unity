@@ -6085,7 +6085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  jump: 100
+  jump: 1
   gravity: -9.81
 --- !u!143 &1093898346
 CharacterController:
