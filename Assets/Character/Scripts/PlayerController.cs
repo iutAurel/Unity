@@ -34,9 +34,8 @@ public class PlayerController : MonoBehaviour
 
     private void Mouv()
     {
-        mouvD = new Vector3(0, 0, Input.GetAxis("Vertical"));
+        mouvD = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         mouvD = transform.TransformDirection(mouvD);
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * Time.deltaTime * speed * 10);
         mouvD *= speed;
         if (Input.GetButton("Jump") && controller.isGrounded)
         {
