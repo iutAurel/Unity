@@ -9,6 +9,7 @@ public class ToFin : MonoBehaviour
 	{
 		SceneManager.LoadScene("SceneFin");
 		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 }
 
